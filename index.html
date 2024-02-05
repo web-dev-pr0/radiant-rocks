@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="imgs/rr-icon.ico" type="image/x-icon" />
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>RadiantRocks</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#hero-section">
+        <h1 class="nav-brand">RadiantRocks</h1>
+      </a>
+      <a class="toggle-button" href="#" onclick="event.preventDefault()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links-container">
+        <ul>
+          <li class="nav-link">
+            <a href="#hero-section">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="#locating" onclick="scrollToLocatingSection(event)"
+              >Locating</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="#card-experts" onclick="scrollToCardsExpertsSection(event)"
+              >Specialists</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="#contact-us-section">Contact Us</a>
+          </li>
+          <li class="nav-link">
+            <a href="#about-us">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero-section">
+      <div class="hero-container">
+        <img
+          src="imgs/diamond-hero.png"
+          loading="lazy"
+          alt="illustration"
+          width="35%"
+          class="hero-diamond"
+        />
+        <h1>Unearth the World's <br /><span>Hidden Treasures</span></h1>
+        <p>
+          Explore the Extraordinary Beauty of the <strong>5</strong> Rarest
+          Gemstones. Dive into Rarity, Elegance, and Uniqueness in Every Stone.
+          Welcome to a World of Precious Wonders.
+        </p>
+      </div>
+    </section>
+
+    <main id="locating">
+      <div class="main-container">
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          "
+        >
+          <h1>LOCATING</h1>
+          <i style="font-size: 3rem" class="fa-solid fa-arrow-down fa-beat"></i>
+        </div>
+        <div class="gemstone-container">
+          <img
+            src="imgs/pinkStartDiamond.png"
+            alt="first gemstone"
+            width="200px"
+            style="max-height: 160px"
+            loading="lazy"
+          />
+          <div>
+            <h2>1#Pink Star Diamond</h2>
+            <p>
+              <strong>Pink Star Diamonds</strong> are found in mines across the
+              world, with notable sources in <u>South Africa</u> and
+              <u>India</u>. These exquisite gems are often unearthed alongside
+              other colored diamonds, making the hunt even more exciting for gem
+              enthusiasts.
+            </p>
+          </div>
+        </div>
+        <div class="gemstone-container" style="padding: 0 1.75rem">
+          <img
+            src="imgs/blueGarnet.png"
+            loading="lazy"
+            alt="first gemstone"
+            width="200px"
+            style="max-height: 220px"
+          />
+          <div>
+            <h2>2#Blue Garnet</h2>
+            <p>
+              <strong>Blue Garnet</strong> is a rare and unique gemstone known
+              for its color-changing properties. It can typically be found in
+              regions like <u>Madagascar</u>, <u>Russia</u>, and <u>Turkey</u>.
+              To locate Blue Garnet, you may need to consult with gemstone
+              dealers, visit reputable jewelry stores, or explore gemstone
+              markets and exhibitions, where you can find specimens and learn
+              more about their origins. Remember to seek guidance from experts
+              to ensure the authenticity of the gemstone.
+            </p>
+          </div>
+        </div>
+        <div class="gemstone-container">
+          <img
+            src="imgs/musgravite.png"
+            loading="lazy"
+            alt="first gemstone"
+            width="200px"
+            style="max-height: 210px"
+          />
+          <div>
+            <h2>3#Musgravite</h2>
+            <p>
+              <strong>Musgravite</strong> is an exceedingly rare gemstone
+              primarily found in the <u>Musgrave Ranges of South Australia</u>.
+              To locate Musgravite, you may need to engage with specialized
+              gemstone dealers, attend gem shows, or explore collector networks
+              and auctions where it occasionally becomes available. Authenticity
+              verification by gem experts is crucial due to its extreme rarity.
+            </p>
+          </div>
+        </div>
+        <div class="gemstone-container" style="padding: 0 1.75rem">
+          <img
+            src="imgs/Bixbite.png"
+            loading="lazy"
+            alt="first gemstone"
+            width="200px"
+            style="max-height: 380px"
+          />
+          <div>
+            <h2>4#Bixbite</h2>
+            <p>
+              <strong>Bixbite</strong>, also known as red beryl or red emerald,
+              is an incredibly rare gemstone primarily found in the
+              <u>Wah Wah Mountains of Beaver County, Utah, USA</u>. The gem's
+              exquisite red coloration, caused by traces of manganese, is a
+              standout feature. The mining of Bixbite is challenging due to the
+              gem's scarcity and restricted access to the mines, adding to its
+              exclusivity. Gem collectors and enthusiasts often consider Bixbite
+              a true treasure due to its rarity and unique beauty, making it a
+              prized addition to any collection. To locate Bixbite, one must
+              explore the rugged terrain of the Wah Wah Mountains, where this
+              gemstone can be found in pockets of volcanic rock formations.
+              Mining for Bixbite involves careful extraction techniques to
+              preserve the gem's quality.
+            </p>
+          </div>
+        </div>
+        <div class="gemstone-container" style="padding: 0rem">
+          <img
+            loading="lazy"
+            src="imgs/jadeite.png"
+            alt="first gemstone"
+            width="200px"
+            style="max-height: 380px"
+          />
+          <div>
+            <h2>5#Jadeite</h2>
+            <p>
+              <strong>Jadeite</strong>, a sought-after gemstone, can be found in
+              <u>Myanmar</u>, especially in the <u>Kachin State region</u> , and
+              in <u>Guatemala</u>. Your best approach to locate Jadeite involves
+              visiting local gem markets in these regions, where you can explore
+              a variety of specimens and learn more about their origins.
+              Additionally, attending jade auctions in Myanmar is a unique
+              opportunity to acquire this precious gem. However, it's crucial to
+              engage with experienced dealers and experts to make informed
+              decisions about authenticity and quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Cards Experts -->
+    <section
+      class="cards-experts-section"
+      id="card-experts"
+      style="text-align: center"
+    >
+      <div class="cards-experts-container">
+        <div class="card">
+          <img src="https://randomuser.me/api/portraits/men/28.jpg" />
+          <h3>Ethan Mitchell</h3>
+          <h4>Gemologist</h4>
+          <p>
+            Ethan Mitchell: A devoted gemologist, revealing the allure of
+            precious stones through a lifetime of exploration and ethical mining
+            advocacy.
+          </p>
+          <div class="card-i-container">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://randomuser.me/api/portraits/women/2.jpg" />
+          <h3>Olivia Davis</h3>
+          <h4>Jewelry Designer</h4>
+          <p>
+            Olivia Davis: Renowned jewelry designer known for crafting
+            exquisite, modern pieces that seamlessly blend elegance and
+            sophistication.
+          </p>
+          <div class="card-i-container">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://randomuser.me/api/portraits/men/14.jpg" />
+          <h3>Daniel Johnson</h3>
+          <h4>Gem Cutter</h4>
+          <p>
+            Daniel Johnson: A skilled gem cutter with a passion for transforming
+            raw gemstones into dazzling, precision-cut works of art.
+          </p>
+          <div class="card-i-container">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://randomuser.me/api/portraits/men/24.jpg" />
+          <h3>Benjamin Smith</h3>
+          <h4>Gemstone Miner</h4>
+          <p>
+            Benjamin Smith: A seasoned gemstone miner, he delves deep into the
+            earth's crust, uncovering rare and precious gems hidden beneath
+            layers of rock and soil.
+          </p>
+          <div class="card-i-container">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us -->
+    <section class="contact-us-section" id="contact-us-section">
+      <h1 class="contact-us-h1">
+        Contact Us <i class="fa-solid fa-pencil"></i>
+      </h1>
+      <form>
+        <div class="first-inside-form-container">
+          <div class="inside-form-container">
+            <div class="form-item-1">
+              <div class="label-input-container">
+                <label for="full-name-input"
+                  ><i class="fa-solid fa-user"></i> Full Name*</label
+                >
+                <input
+                  type="text"
+                  id="full-name-input"
+                  class="full-name-input"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="label-input-container">
+                <label for="full-name-input"
+                  ><i class="fa-solid fa-envelope"></i> Email*</label
+                >
+                <input
+                  type="email"
+                  id="full-name-input"
+                  class="full-name-input"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-item-2">
+              <div class="label-input-container">
+                <label for="full-name-input">Title (Optional)</label>
+                <input
+                  type="text"
+                  id="full-name-input"
+                  class="full-name-input"
+                  placeholder="Title"
+                />
+              </div>
+              <div class="label-input-container">
+                <label for="full-name-input"
+                  ><i class="fa-solid fa-message"></i> Message*</label
+                >
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+    <!-- Footer -->
+    <div style="display: flex; gap: 0; flex-direction: column">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="margin-bottom: -1px"
+      >
+        <path
+          fill="#717568"
+          fill-opacity="1"
+          d="M0,224L30,197.3C60,171,120,117,180,101.3C240,85,300,107,360,149.3C420,192,480,256,540,245.3C600,235,660,149,720,144C780,139,840,213,900,213.3C960,213,1020,139,1080,106.7C1140,75,1200,85,1260,106.7C1320,128,1380,160,1410,176L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+      <footer id="about-us">
+        <div class="footer-main-container">
+          <div class="footer-container-item">
+            <h2>RadiantRocks</h2>
+            <p>Home | Locating | Specialists | Contact Us | About Us</p>
+            <p>RadiantRocks &copy;2023. All rights reserved.</p>
+          </div>
+          <div class="footer-container-item">
+            <div class="footer-address-container">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> 1202 Lincoln Street
+              </p>
+              Princeton, New Jersey
+            </div>
+            <p><i class="fa-solid fa-phone"></i> 609-497-5830</p>
+            <p class="footer-email-p">
+              <i class="fa-solid fa-envelope"></i> radiantrocks@gmail.com
+            </p>
+          </div>
+          <div class="footer-container-item">
+            <h4>About The Company</h4>
+            <p style="font-size: 0.75rem; width: 320px">
+              RadiantRocks takes pride in curating and designing jewelry
+              collections that feature these rare gemstones. Our Imagination
+              Collection showcases the magic and allure of these gems, inviting
+              you to explore the world of beauty, rarity, and imagination.
+            </p>
+            <div style="display: flex; gap: 10px">
+              <i class="fa-brands fa-facebook" style="cursor: pointer"></i>
+              <i class="fa-brands fa-instagram" style="cursor: pointer"></i>
+              <i class="fa-brands fa-linkedin" style="cursor: pointer"></i>
+              <i class="fa-brands fa-x-twitter" style="cursor: pointer"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
